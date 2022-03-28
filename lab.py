@@ -1,4 +1,10 @@
-import platform
-import sys
+from mateco import TTS
 
-print(platform.system())
+mod = TTS()
+
+mod.setup_voice('pt-br')
+
+mod.convert("")
+mod.speak()
+
+
